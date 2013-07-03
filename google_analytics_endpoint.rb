@@ -5,9 +5,9 @@ class GoogleAnalyticsEndpoint < EndpointBase
 
   set :logging, true
 
-  # post '/order_confirmation' do
-  #   order = OrderConfirmation.new(@message[:payload], @message[:message_id], @config)
-  #   process_result *order.consume
-  # end
+  post '/track_order' do
+    google_analytics = GoogleAnalytics.new(@message[:payload], @message[:message_id], @config)
+    process_result *google_analytics.track_order
+  end
 
 end

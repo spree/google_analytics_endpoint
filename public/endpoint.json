@@ -1,0 +1,29 @@
+{
+  "name": "google_analytics",
+  "display": "Google Analytics",
+  "description": "Send e-commerce events to your google analytics",
+  "help": "http://guides.spreecommerce.com/integration/endpoints/google_analytics",
+  "consumers":
+    [
+      {
+        "name": "completed_order",
+        "path": "/track_order",
+        "description": "Send Transaction and Item events to google analytics",
+        "requires":
+          {
+            "parameters":
+              [
+                {
+                  "name": "tracking_id",
+                  "description": "Google Analytics Tracking ID (UA-XXXX-Y)"
+                }
+              ]
+          },
+        "recommends":
+          {
+            "keys": [ "order:new" ]
+          },
+        "produces": {}
+      }
+    ]
+}
