@@ -21,7 +21,7 @@
           },
         "recommends":
           {
-            "keys": [ "order:new" ]
+            "messages": [ "order:new" ]
           },
         "produces": {}
       }
