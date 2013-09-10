@@ -3,6 +3,7 @@
   "display": "Google Analytics",
   "description": "Send e-commerce events to your google analytics",
   "help": "http://guides.spreecommerce.com/integration/endpoints/google_analytics",
+  "icon_url": "google_analytics.png",
   "consumers":
     [
       {
